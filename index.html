@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For You ♥</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<button class="mute" id="mute">🔊</button>
+
+<!-- 1. Intro -->
+<div class="screen on" id="intro">
+  <div class="heart-wrap">
+    <svg viewBox="-6 -6 212 192"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8ab8"/><stop offset=".55" stop-color="#ff2d78"/><stop offset="1" stop-color="#b3125a"/></linearGradient></defs><path id="hpath" pathLength="420" d="M100 168 C40 120 8 88 8 52 C8 24 30 6 56 6 C76 6 92 18 100 34 C108 18 124 6 144 6 C170 6 192 24 192 52 C192 88 160 120 100 168Z"/><path id="hshine" d="M30 48 C30 32 42 22 56 22" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg>
+  </div>
+  <p class="hint">Tap the heart ♥<b>اضغطي على القلب</b></p>
+</div>
+
+<!-- 2. Photos -->
+<div class="screen" id="photos">
+  <div class="frame" id="frame"></div>
+  <div class="dots" id="dots"></div>
+  <div class="nav"><button id="prev">‹</button><button id="next">›</button></div>
+  <div class="swipe">Swipe or tap ♥</div>
+</div>
+
+<!-- 3. Ask -->
+<div class="screen" id="ask">
+  <h2 id="q"></h2>
+  <div class="btns">
+    <button id="yes">Yes 💖</button>
+    <button id="no">No</button>
+  </div>
+</div>
+
+<!-- 4. Letter -->
+<div class="screen" id="letter">
+  <div class="good" id="good"></div>
+  <div id="msg"></div>
+  <div id="sign"></div>
+</div>
+
+<audio id="song1" loop preload="auto"></audio>
+<audio id="song2" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
